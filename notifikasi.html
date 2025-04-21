@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Notifikasi - Customer</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    body {
+      background-color: #f3f3f3;
+    }
+
+    .navbar {
+      background-color: #004d1a;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .navbar .brand {
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .navbar .icons {
+      display: flex;
+      gap: 15px;
+    }
+
+    .search-bar {
+      width: 40%;
+      margin: 10px auto;
+      display: block;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      text-align: center;
+      color: #6c2b2b;
+    }
+
+    .menu {
+      display: flex;
+      justify-content: space-around;
+      background-color: #f4f4f4;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .menu div {
+      padding: 10px 20px;
+      cursor: pointer;
+      color: #004d1a;
+    }
+
+    .menu .active {
+      border-bottom: 2px solid #004d1a;
+      font-weight: bold;
+    }
+
+    .container {
+      padding: 30px 50px;
+    }
+
+    .notif-box {
+      background-color: white;
+      border-radius: 5px;
+      padding: 20px;
+      margin-bottom: 15px;
+      display: flex;
+      justify-content: space-between;
+      box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .notif-text {
+      color: #004d1a;
+    }
+
+    .notif-date {
+      color: #004d1a;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="brand">ARIF MOTOR</div>
+    <div class="icons">
+      <img src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png" width="24" alt="Cart">
+      <img src="https://cdn-icons-png.flaticon.com/512/1144/1144760.png" width="24" alt="Profile">
+    </div>
+  </div>
+
+  <input type="text" class="search-bar" placeholder="Cari SparePart">
+
+  <div class="menu">
+    <div>Beranda</div>
+    <div>Pesanan</div>
+    <div class="active">Notifikasi</div>
+    <div>Chat</div>
+    <div>Service</div>
+  </div>
+
+  <div class="container">
+    <div class="notif-box">
+      <div class="notif-text">Anda sudah membeli produk sparepart</div>
+      <div class="notif-date">13-03-2025</div>
+    </div>
+    <div class="notif-box">
+      <div class="notif-text">Anda sudah memesan layanan service</div>
+      <div class="notif-date">14-03-2025</div>
+    </div>
+  </div>
+
+</body>
+</html>
